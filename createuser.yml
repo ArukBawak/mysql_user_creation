@@ -10,4 +10,4 @@
         login_user: 'abawak'
         login_password: 's_Pw<6(H'
         login_port: '3306'
-        query: 'show processlis'
+        query: 'show processlist'
