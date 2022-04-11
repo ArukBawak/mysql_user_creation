@@ -1,0 +1,17 @@
+--
+- name: ssh into qarouter
+  hosts: qadbserver
+  remote_user: qadb
+
+  tasks:
+    - name: Create database user with password qadbserver'
+      mysql_user:
+          login_host: 'qadbserver'
+          login_user: 'abawak'
+          login_password: 's_Pw<6(H'
+          name: {{user}}
+          password: '{{pass}}'
+          priv: '*.*:INSET,PROCESS,UPDATE,DELETE'
+          state: present
+          - name: Flush Privileges
+            shell: mysql -u root -p -h login_host  -e 'FLUSH PRIVILEGES'
