@@ -1,0 +1,5 @@
+node('jnlp-ansible') {
+  checkout scm
+  sh 'ansible-playbook createuser.yml -i inventory'
+
+}
