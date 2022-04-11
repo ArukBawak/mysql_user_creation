@@ -1,0 +1,6 @@
+[qadbserver]
+192.168.157.152 ansible_ssh_private_key_file=/home/jenkins/agent/.ssh/jenkins_agent_key ansible_ssh_common_args='-o UserKnownHostsFile=/dev/null' ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[dbprodserver]
+192.168.157.104 ansible_ssh_private_key_file=/home/jenkins/agent/.ssh/jenkins_agent_key ansible_ssh_common_args='-o UserKnownHostsFile=/dev/null' ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+192.168.157.106 ansible_ssh_private_key_file=/home/jenkins/agent/.ssh/jenkins_agent_key ansible_ssh_common_args='-o UserKnownHostsFile=/dev/null' ansible_ssh_common_args='-o StrictHostKeyChecking=no'
